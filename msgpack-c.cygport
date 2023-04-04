@@ -13,6 +13,8 @@ SRC_DIR="msgpack-${VERSION}"
 
 PKG_NAMES="libmsgpackc2 libmsgpackc-devel"
 
+BUILD_REQUIRES="cmake ninja"
+
 libmsgpackc2_CONTENTS="usr/bin/ usr/share/doc/"
 libmsgpackc2_SUMMARY="${SUMMARY}"
 
