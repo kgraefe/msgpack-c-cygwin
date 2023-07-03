@@ -24,3 +24,8 @@ libmsgpackc_devel_SUMMARY="${SUMMARY} (development)"
 
 # makes fdopen visible for example/cpp03/stream.cpp
 CPPFLAGS="-D_GNU_SOURCE"
+
+# Cygwin does not have gtest. This option was enabled by default by accident,
+# which is already fixed in master.
+# see https://github.com/msgpack/msgpack-c/pull/1069
+CYGCMAKE_ARGS="-DMSGPACK_BUILD_TESTS=OFF"
