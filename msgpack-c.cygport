@@ -2,15 +2,15 @@ inherit cmake
 
 NAME="msgpack-c"
 LICENSE="BSL-1"
-VERSION="3.3.0"
-RELEASE=2
+VERSION="6.0.0"
+RELEASE=1
 CATEGORY="Libs"
 SUMMARY="MessagePack implementation for C and C++"
 DESCRIPTION="MessagePack is an efficient binary serialization format, which lets you exchange data among multiple languages like JSON, except that it's faster and smaller. Small integers are encoded into a single byte while typical short strings require only one extra byte in addition to the strings themselves."
 HOMEPAGE="https://github.com/msgpack/msgpack-c"
-SRC_URI="https://github.com/msgpack/${NAME}/releases/download/cpp-${VERSION}/msgpack-${VERSION}.tar.gz"
+SRC_URI="https://github.com/msgpack/${NAME}/releases/download/c-${VERSION}/msgpack-c-${VERSION}.tar.gz"
 
-SRC_DIR="msgpack-${VERSION}"
+SRC_DIR="msgpack-c-${VERSION}"
 
 PKG_NAMES="libmsgpackc2 libmsgpackc-devel"
 
